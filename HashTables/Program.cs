@@ -10,6 +10,7 @@ namespace HashTables
     {
         static void Main(string[] args)
         {
+
             //Welcome Message
             Console.WriteLine("=-=-=-=-=-Welcome To The Hash Tables Program-=-=-=-=-=");
 
@@ -31,14 +32,23 @@ namespace HashTables
             }
 
             //Display
-            Console.WriteLine("--------------------------------");
-            Console.WriteLine("frequency of words ");
-            Console.WriteLine("--------------------------------");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("Before Removing avoidable word from the phrase");
+            Console.WriteLine("-----------------------------------------------");
 
             myMapNode.Display();
 
-            Console.WriteLine("--------------------------------");
-            Console.WriteLine("--------------------------------");
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("After Removing avoidable word from the phrase");
+            Console.WriteLine("-----------------------------------------------");
+
+            //Removing avoidable
+            myMapNode.Remove(17);
+
+            myMapNode.Display();
+
+            Console.WriteLine("-----------------------------------------------");
+            Console.WriteLine("-----------------------------------------------");
             Console.ReadLine();
         }
     }
